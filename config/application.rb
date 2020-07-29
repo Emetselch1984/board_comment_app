@@ -35,5 +35,5 @@ module RunteqNormal
   g.resource_route false
   g.test_framework false
 end
-  end
+  
 end
