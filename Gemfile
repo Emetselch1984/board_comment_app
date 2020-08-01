@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.3'
 gem 'bootstrap', '~> 4.4.1'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'jquery-rails'
+gem 'sorcery'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -22,6 +23,7 @@ gem 'bootstrap-sass', '~>3.3.6'
 gem 'jquery-ui-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'pry-byebug'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
