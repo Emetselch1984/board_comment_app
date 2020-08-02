@@ -38,5 +38,4 @@ module RunteqNormal
       g.test_framework false
     end
   end
-
 end
