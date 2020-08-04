@@ -4,7 +4,7 @@ ja:
     register: '登録'
     logout: 'ログアウト'
     message:
-      require_login: 'ログインして下さい'
+      require_login: '「ログインして下さい」'
   users:
     new:
       title: 'ユーザー登録'
