@@ -44,4 +44,11 @@ class BoardImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  def default_url
+    'board_placeholder.png'
+  end
+  # 許可する画像の拡張子
+  def extension_whitelist
+    %w(jpg jpeg gif png)
+  end
 end
