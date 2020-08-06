@@ -1,21 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
-      <h1>掲示板作成</h1>
-        <%= form_with url: boards_path, local: true do |f| %>
-          <div class="form-group">
-            <%= f.label :title,
-            Board.human_attribute_name(:title) %>
-            <%= f.text_field :title, class: 'form-control' %>
-          </div>
-          <div class="form-group">
-            <%= f.label :body,
-            Board.human_attribute_name(:body) %>
-            <%= f.text_field :body, class: 'form-control' %>
-          </div>
-          <%= f.submit ('作成'), class: 'btn btn-primary' %>
-        <% end %>
+      <h1><%= t('.title') %></h1>
+      <%= render 'form', { board: @board } %>
     </div>
   </div>
 </div>
-      <%= debug(params) if Rails.env.development? %>
