@@ -49,6 +49,6 @@ class BoardImageUploader < CarrierWave::Uploader::Base
   end
   # 許可する画像の拡張子
   def extension_whitelist
-    %w(jpg jpeg gif png)
+  %w[jpg jpeg gif png]
   end
 end
