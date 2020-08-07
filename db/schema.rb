@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_06_231131) do
+ActiveRecord::Schema.define(version: 2020_08_07_033548) do
 
   create_table "boards", force: :cascade do |t|
     t.string "title", null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_08_06_231131) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.text "body"
+    t.text "body", null: false
     t.integer "user_id"
     t.integer "board_id"
     t.datetime "created_at", null: false
