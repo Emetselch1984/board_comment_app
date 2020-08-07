@@ -4,7 +4,7 @@
       <%= render 'shared/error_messages', object: f.object %>
       <%= f.label :body %>
       <%= f.text_area :body, class: 'form-control mb-3', id: 'js-new-comment-body', row: 4, placeholder:"ここに記入"%>
-      <%= f.submit "押す", class: 'btn btn-primary' %>
+      <%= f.submit t('defaults.post'), class: 'btn btn-primary' %>
     <% end %>
   </div>
 </div>
