@@ -32,7 +32,7 @@ ja:
     new:
       title: '掲示板作成'
     show:
-      title: '掲示詳細'
+      title: '掲示板詳細'
     bookmarks:
       title: 'ブックマーク一覧'
   profiles:
