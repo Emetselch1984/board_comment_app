@@ -33,6 +33,11 @@ ja:
       title: '掲示板作成'
     show:
       title: '掲示板詳細'
+    destroy:
+      success: '掲示版を削除しました。'
+    update:
+      success: '掲示版を更新しました'
+      fail: '更新に失敗しました'
     bookmarks:
       title: 'ブックマーク一覧'
   profiles:

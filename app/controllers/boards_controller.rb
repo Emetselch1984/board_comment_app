@@ -1,4 +1,5 @@
 class BoardsController < ApplicationController
+  before_action :set_user, only: %i[edit update]
   def index
     @boards = Board.all.includes(:user).order(created_at: :desc)
   end
@@ -22,10 +23,29 @@ class BoardsController < ApplicationController
     @comment = Comment.new
     @comments = @board.comments.includes(:user).order(created_at: :desc)
   end
+  def destroy
+   @board = current_user.boards.find(params[:id])
+   @board.destroy!
+   redirect_to boards_path,danger: t('.success')
+  end
+
+  def edit
+  end
+
+  def update
+   if @board.update(board_params)
+     redirect_to boards_path, success: t('.success')
+   else
+    render :edit
+   end
+  end
 
   private
 
   def board_params
     params.require(:board).permit(:title, :body, :board_image, :board_image_cache)
+  end
+  def set_user
+    @board = current_user.boards.find(params[:id])
   end
 end
