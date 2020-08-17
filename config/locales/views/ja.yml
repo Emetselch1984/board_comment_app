@@ -34,10 +34,10 @@ ja:
     show:
       title: '掲示板詳細'
     destroy:
-      success: '掲示版を削除しました。'
+      success: '掲示版を削除しました'
     update:
       success: '掲示版を更新しました'
-      fail: '更新に失敗しました'
+      fail: '掲示版を更新できませんでした'
     bookmarks:
       title: 'ブックマーク一覧'
   profiles:

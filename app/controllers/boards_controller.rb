@@ -36,6 +36,7 @@ class BoardsController < ApplicationController
    if @board.update(board_params)
      redirect_to boards_path, success: t('.success')
    else
+    flash.now[:danger] = t('.fail')
     render :edit
    end
   end
