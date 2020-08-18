@@ -30,7 +30,9 @@ class BoardsController < ApplicationController
     redirect_to boards_path, success: t('.success')
   end
 
-  def edit; end
+  def edit
+    @board = current_user.boards.find(params[:id])
+  end
 
   def update
     if @board.update(board_params)
