@@ -27,17 +27,17 @@ class BoardsController < ApplicationController
   def destroy
     @board = current_user.boards.find(params[:id])
     @board.destroy!
-    redirect_to boards_path,success: t('.success')
+    redirect_to boards_path, success: t('.success')
   end
 
-  def edit ;end
+  def edit; end
 
   def update
     if @board.update(board_params)
-     redirect_to boards_path, success: t('.success')
+      redirect_to boards_path, success: t('.success')
     else
-     flash.now['danger'] = t('.fail')
-     render :edit
+      flash.now['danger'] = t('.fail')
+      render :edit
     end
   end
 
