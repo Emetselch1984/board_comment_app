@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings><!--このファイルは Ruby プラグインにより自動的に生成されました。
+以下を行えます。 
+1. Rake タスクの除去
+2. 既存の Rake タスクの追加
+既存の Rake タスクを自動的に追加するには、このファイルを削除してからプロジェクトを再ロードしてください。
+--><RakeGroup description="" fullCmd="" taksId="rake" /></Settings>

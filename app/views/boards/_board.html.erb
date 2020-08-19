@@ -7,6 +7,7 @@
           <%= link_to board.title, board_path(board) %>
         </h4>
       <%= render 'crud_menus', board: board if current_user.own?(board)%>
+        <%= render 'bookmark_area', board: board if !current_user.own?(board) %>
         <ul class="list-inline">
           <li class="list-inline-item">
             <%= icon 'far', 'user' %>

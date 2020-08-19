@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   resources :boards do
     resources :comments, only: %i[create], shallow: true
   end
+  resources :boards, shallow: true do
+    resource :bookmarks, only: %i[create destroy]
+    get :bookmarks, on: :collection
+  end
 end

@@ -4,6 +4,7 @@ ja:
     register: '登録'
     logout: 'ログアウト'
     post: '投稿'
+    bookmark: 'ブックマーク一覧'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -40,6 +41,9 @@ ja:
       fail: '掲示板を更新できませんでした'
     bookmarks:
       title: 'ブックマーク一覧'
+  bookmarks:
+    success: 'ブックマークを追加しました'
+    danger: 'ブックマークを解除しました'
   profiles:
     show:
       title: 'プロフィール'

@@ -44,6 +44,10 @@ class BoardsController < ApplicationController
     end
   end
 
+  def bookmarks
+    @boards = current_user.bookmark_boards.includes(:user)
+  end
+
   private
 
   def board_params
