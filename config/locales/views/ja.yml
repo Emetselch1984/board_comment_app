@@ -41,9 +41,12 @@ ja:
       fail: '掲示板を更新できませんでした'
     bookmarks:
       title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません。'
   bookmarks:
-    success: 'ブックマークを追加しました'
-    danger: 'ブックマークを解除しました'
+    create:
+      success: 'ブックマークしました'
+    destroy:
+      success: 'ブックマークを外しました'
   profiles:
     show:
       title: 'プロフィール'
