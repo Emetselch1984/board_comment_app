@@ -10,4 +10,5 @@ class BookmarksController < ApplicationController
     current_user.unbookmark(board)
     redirect_back fallback_location: root_path, success: t('.success')
   end
+
 end
