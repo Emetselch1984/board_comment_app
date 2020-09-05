@@ -60,7 +60,12 @@ ja:
   comments:
   password_resets:
     new:
-      title: 'パスワードリセット'
+      title: 'パスワードリセット申請'
       submit: '送信'
     edit:
-      title: 'パスワードリセット申請'
+      title: 'パスワードリセット'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      fail: 'パスワードの変更に失敗しました'
