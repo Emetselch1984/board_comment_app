@@ -31,6 +31,7 @@ gem 'pry-byebug'
 gem 'jquery-turbolinks'
 gem 'kaminari', '1.1.1'
 gem 'ransack', '2.3.0'
+gem 'config', '2.0.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -48,12 +49,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
+  gem 'letter_opener_web', '~> 1.0'
   # 変更しないでください
   gem 'rubocop'
   gem 'rubocop-rails'
   gem 'rubocop-checkstyle_formatter'
   gem 'rspec-rails'
   gem 'rspec_junit_formatter'
+
   ## ここまで
 end
 
