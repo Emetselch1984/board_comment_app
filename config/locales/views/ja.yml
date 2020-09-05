@@ -6,10 +6,13 @@ ja:
     post: '投稿'
     bookmark: 'ブックマーク一覧'
     search_word: '検索ワード'
+    edit: '編集'
     message:
       require_login: 'ログインしてください'
       created: "%{item}を作成しました"
       not_created: "%{item}を作成できませんでした"
+      updated: "%{item}を編集しました"
+      not_updated: "%{item}を編集できませんでした"
   users:
     new:
       title: 'ユーザー登録'
