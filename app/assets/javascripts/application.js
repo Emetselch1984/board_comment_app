@@ -17,4 +17,5 @@
 //= require jquery.turbolinks
 //= require popper
 //= require bootstrap-sprockets
-//= require_tree .
+//= require edit_comment
+//= require preview
