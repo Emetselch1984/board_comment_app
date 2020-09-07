@@ -746,6 +746,19 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="enum_help (vbundled(0.0.17)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/enum_help-0.0.17/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/enum_help-0.0.17/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="erubi (vbundled(1.9.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />

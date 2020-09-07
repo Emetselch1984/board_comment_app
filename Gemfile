@@ -32,6 +32,7 @@ gem 'jquery-turbolinks'
 gem 'kaminari', '1.1.1'
 gem 'ransack', '2.3.0'
 gem 'config', '2.0.0'
+gem 'enum_help', '0.0.17'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
