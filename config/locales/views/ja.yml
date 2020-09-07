@@ -17,6 +17,7 @@ ja:
       updated: "%{item}を更新しました"
       not_updated: "%{item}を更新できませんでした"
       not_authorized: '権限がありません'
+      deleted: "%{item}を削除しました"
   users:
     new:
       title: 'ユーザー登録'
@@ -98,4 +99,3 @@ ja:
         title: '掲示板編集'
       show:
         title: '掲示板詳細'
-     
