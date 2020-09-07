@@ -91,10 +91,11 @@ ja:
         title: 'ユーザー編集'
       show:
         title: 'ユーザー詳細'
-      boards:
-        index:
-          title: '掲示板一覧'
-        edit:
-          title: '掲示板編集'
-        show:
-          title: '掲示板詳細'
+    boards:
+      index:
+        title: '掲示板一覧'
+      edit:
+        title: '掲示板編集'
+      show:
+        title: '掲示板詳細'
+     
