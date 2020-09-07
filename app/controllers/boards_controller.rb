@@ -60,4 +60,3 @@ class BoardsController < ApplicationController
     @board = current_user.boards.find(params[:id])
   end
 end
-
