@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_015722) do
+ActiveRecord::Schema.define(version: 2020_09_12_031622) do
 
   create_table "authentications", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2020_09_12_015722) do
   end
 
   create_table "boards", force: :cascade do |t|
-    t.text "title", null: false
-    t.text "body", null: false
+    t.text "title"
+    t.text "body"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -50,16 +50,7 @@ ActiveRecord::Schema.define(version: 2020_09_12_015722) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "email", null: false
-    t.string "crypted_password"
-    t.string "salt"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "role"
-    t.string "first_name"
-    t.string "last_name"
-    t.index ["email"], name: "index_users_on_email", unique: true
-  end
+# Could not dump table "users" because of following StandardError
+#   Unknown type 'srting' for column 'avatar'
 
 end
