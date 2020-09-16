@@ -35,7 +35,6 @@ plugin :tmp_restart
 if Rails.env.development?
   # 3000番以外の任意のポートを指定
   ssl_bind '0.0.0.0', '3001', {
-      cert: 'config/certs/localhost.pem',
-      key: 'config/certs/localhost-key.pem'
-                              }
+      cert:  'config/certs/localhost.pem',
+      key: 'config/certs/localhost-key.pem'}
 end
