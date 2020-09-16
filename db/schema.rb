@@ -50,7 +50,17 @@ ActiveRecord::Schema.define(version: 2020_09_12_031622) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-# Could not dump table "users" because of following StandardError
-#   Unknown type 'srting' for column 'avatar'
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "crypted_password"
+    t.string "salt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "avatar"
+    t.integer "role", default: 0
+    t.string "first_name"
+    t.string "last_name"
+    t.index ["email"], name: "index_users_on_email", unique: true
+  end
 
 end
