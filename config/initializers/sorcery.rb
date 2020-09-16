@@ -4,7 +4,7 @@
 # Available submodules are: :user_activation, :http_basic_auth, :remember_me,
 # :reset_password, :session_timeout, :brute_force_protection, :activity_logging,
 # :magic_login, :external
-Rails.application.config.sorcery.submodules = [:reset_password, :external]
+Rails.application.config.sorcery.submodules = %i[reset_password, external]
 
 # Here you can configure each submodule's features.
 Rails.application.config.sorcery.configure do |config|
@@ -124,7 +124,7 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.secret = Settings.dig(:sorcery, :facebook, :secret)
   config.facebook.callback_url = Settings.dig(:sorcery, :facebook, :callback_url)
   config.facebook.user_info_path = 'me?fields=email,first_name,last_name'
-  config.facebook.user_info_mapping = {:email => 'email', :first_name => 'first_name', :last_name => 'last_name'}
+  config.facebook.user_info_mapping = { email:'email', first_name: 'first_name', last_name: 'last_name'}
   config.facebook.access_permissions = ['email']
   config.facebook.display = 'page'
   config.facebook.api_version = 'v3.3'

@@ -7,7 +7,7 @@ class OauthsController < ApplicationController
 
   def callback
     provider = params[:provider]
-    if @user = login_from(provider)
+    if @user == login_from(provider)
       redirect_to root_path, success: t('defaults.message.outh_login.success', provider: provider.titleize)
     else
       begin
