@@ -124,7 +124,7 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.secret = Settings.dig(:sorcery, :facebook, :secret)
   config.facebook.callback_url = Settings.dig(:sorcery, :facebook, :callback_url)
   config.facebook.user_info_path = 'me?fields=email,first_name,last_name'
-  config.facebook.user_info_mapping = { email: 'email', first_name: 'first_name', last_name: 'last_name'}
+  config.facebook.user_info_mapping = { email: 'email', first_name: 'first_name', last_name: 'last_name' }
   config.facebook.access_permissions = ['email']
   config.facebook.display = 'page'
   config.facebook.api_version = 'v3.3'
