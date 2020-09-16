@@ -37,5 +37,5 @@ if Rails.env.development?
   ssl_bind '0.0.0.0', '3001', {
       cert:  'config/certs/localhost.pem',
       key:   'config/certs/localhost-key.pem'
-  }
+                              }
 end
