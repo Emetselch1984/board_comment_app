@@ -15,7 +15,7 @@ class OauthsController < ApplicationController
         reset_session
         auto_login(@user)
         redirect_to root_path, success: t('defaults.message.outh_login.success', provider: provider.titleize)
-      rescue
+      rescue StandardError
         redirect_to root_path, danger: t('defaults.message.outh_login.fail', provider: provider.titleize)
       end
     end

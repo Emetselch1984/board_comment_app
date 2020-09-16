@@ -123,11 +123,11 @@ Rails.application.config.sorcery.configure do |config|
   config.facebook.key = Settings.dig(:sorcery, :facebook, :key)
   config.facebook.secret = Settings.dig(:sorcery, :facebook, :secret)
   config.facebook.callback_url = Settings.dig(:sorcery, :facebook, :callback_url)
-  config.facebook.user_info_path = "me?fields=email,first_name,last_name"
-  config.facebook.user_info_mapping = {:email => "email", :first_name => "first_name", :last_name => "last_name"}
-  config.facebook.access_permissions = ["email"]
-  config.facebook.display = "page"
-  config.facebook.api_version = "v3.3"
+  config.facebook.user_info_path = 'me?fields=email,first_name,last_name'
+  config.facebook.user_info_mapping = {:email => 'email', :first_name => 'first_name', :last_name => 'last_name'}
+  config.facebook.access_permissions = ['email']
+  config.facebook.display = 'page'
+  config.facebook.api_version = 'v3.3'
   config.facebook.parse = :json
   # config.instagram.key = ""
   # config.instagram.secret = ""
@@ -519,7 +519,7 @@ Rails.application.config.sorcery.configure do |config|
     # Class which holds the various external provider data for this user.
     # Default: `nil`
     #
-     user.authentications_class = Authentication
+    user.authentications_class = Authentication
 
     # User's identifier in the `authentications` class.
     # Default: `:user_id`
