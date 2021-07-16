@@ -1,3 +1,4 @@
+
 $(function() {
 
     $(document).on("click", '.js-edit-comment-button', function(e) {
@@ -17,6 +18,7 @@ $(function() {
         const commentId = $(this).data("comment-id")
         submitComment($("#js-textarea-comment-" + commentId).val(), commentId)
             .then(result => {
+                console.log(result.comment)
                 $("#js-comment-" + result.comment.id).html(result.comment.body.replace(/\r?\n/g, '<br>'))
                 switchToLabel(result.comment.id)
             })
@@ -43,6 +45,7 @@ $(function() {
 
     function submitComment(body, commentId) {
         return new Promise(function(resolve, reject) {
+            console.log(body)
             $.ajax({
                 type: 'PATCH',
                 url: '/comments/' + commentId,
@@ -52,6 +55,7 @@ $(function() {
                     }
                 }
             }).done(function (result) {
+                console.log(result)
                 resolve(result)
             }).fail(function (result) {
                 reject(result)
